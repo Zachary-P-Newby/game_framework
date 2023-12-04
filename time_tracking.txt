@@ -5,7 +5,64 @@
 
 ~25 minutes
     set up
+    Started GdQuest tutorials to learn how to code in GdScript
     GdQuest lessons 1-4
 
 15+ minutes
-    GdQuest Lessons 5&6
+    GdQuest Lessons 5-7
+    Published repository to Github
+
+11/29/23
+25 minutes
+    GdQuest Lessons 8-14, part of 15
+25 minutes
+    GdQuest Lessons 15-17, part of 18
+25 minutes
+    GdQuest Lessons 18-22, Most of 23
+20 minutes
+    GdQuest Lessons 23- 27, Finished tutorials
+    Looked into tutorial series
+
+11/30/23
+
+25 minutes
+    Watched Godot in 100 Sconds
+    Bought Sunny Land Asset Pack for $1
+    started watching Godot Game Development – Crash Course for Beginners Tutorial Video
+    Created sunny_land_tutorial Project
+
+25 minutes
+    continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Created main, world, and player scenes
+
+13 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Adding player spritesheets
+
+12/1/23
+25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Player Movement
+        Player Animation -
+
+25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Player Movement
+        Player Animation
+    
+    25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Player Animation
+        Paralax background
+
+    25? minutes
+     Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Backgrounds
+        Tiling
+        Created simple level
+        Came up with game idea: Collect the Stuff
+
+12/2/23
+25+ minutes  
+    Watched some of "All 219 Godot Nodes Explained In 42 Minutes !"
+    and "5 tips for better platformer controls"
