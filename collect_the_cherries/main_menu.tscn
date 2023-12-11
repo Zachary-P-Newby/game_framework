@@ -1,0 +1,131 @@
+[gd_scene load_steps=6 format=3 uid="uid://cbegam1nl2t0x"]
+
+[ext_resource type="Texture2D" uid="uid://bwjdyxfeqnx2p" path="res://Sunny-land-files/Graphical Assets/environment/Background/back.png" id="1_frcef"]
+[ext_resource type="Script" path="res://main_menu.gd" id="1_nfbqy"]
+[ext_resource type="Texture2D" uid="uid://c3efr882yxf3i" path="res://Sunny-land-files/Graphical Assets/environment/Background/middle.png" id="2_wiigx"]
+[ext_resource type="Script" path="res://Menu_Background.gd" id="2_wj1nl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rxwta"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_nfbqy")
+
+[node name="MenuBackground" type="ParallaxBackground" parent="."]
+scroll_offset = Vector2(400, 0)
+script = ExtResource("2_wj1nl")
+
+[node name="Background" type="ParallaxLayer" parent="MenuBackground"]
+motion_offset = Vector2(1, 0)
+motion_mirroring = Vector2(1152, 0)
+metadata/_edit_lock_ = true
+
+[node name="Sky" type="Sprite2D" parent="MenuBackground/Background"]
+position = Vector2(576, 328)
+scale = Vector2(3, 2.70417)
+texture = ExtResource("1_frcef")
+
+[node name="Midground" type="ParallaxLayer" parent="MenuBackground"]
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1232, 0)
+metadata/_edit_lock_ = true
+
+[node name="Forest" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(88, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Forest2" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(264, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Forest3" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(440, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Forest4" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(616, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Forest5" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(792, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Forest6" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(968, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Forest7" type="Sprite2D" parent="MenuBackground/Midground"]
+position = Vector2(1144, 464)
+texture = ExtResource("2_wiigx")
+
+[node name="Title" type="Panel" parent="."]
+offset_left = 192.0
+offset_top = 128.0
+offset_right = 960.0
+offset_bottom = 192.0
+
+[node name="Label" type="Label" parent="Title"]
+layout_mode = 0
+offset_right = 768.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 40
+text = "Collect the Cherries"
+horizontal_alignment = 1
+
+[node name="Menu" type="VBoxContainer" parent="."]
+offset_left = 384.0
+offset_top = 312.0
+offset_right = 768.0
+offset_bottom = 640.0
+theme_override_constants/separation = 30
+
+[node name="Easy" type="Button" parent="Menu"]
+layout_mode = 2
+text = "Easy"
+
+[node name="Medium" type="Button" parent="Menu"]
+layout_mode = 2
+text = "Medium
+"
+
+[node name="Hard" type="Button" parent="Menu"]
+layout_mode = 2
+text = "Hard"
+
+[node name="How to Play" type="Button" parent="Menu"]
+layout_mode = 2
+text = "How to Play
+"
+
+[node name="Quit" type="Button" parent="Menu"]
+layout_mode = 2
+text = "Quit
+"
+
+[node name="Window" type="Window" parent="."]
+title = "How to Play:"
+position = Vector2i(1400, 300)
+size = Vector2i(400, 100)
+
+[node name="Label" type="Label" parent="Window"]
+layout_direction = 2
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -200.0
+offset_right = 800.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+text = "Collect all the cherries before time runs out!
+Use left and right to run and spacebar to jump.
+And don't touch the poisionous frogs!"
+label_settings = SubResource("LabelSettings_rxwta")
+autowrap_mode = 3
+
+[connection signal="pressed" from="Menu/Easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="Menu/Medium" to="." method="_on_medium_pressed"]
+[connection signal="pressed" from="Menu/Hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="Menu/How to Play" to="." method="_on_how_to_play_pressed"]
+[connection signal="pressed" from="Menu/Quit" to="." method="_on_quit_pressed"]
+[connection signal="close_requested" from="Window" to="." method="_on_window_close_requested"]

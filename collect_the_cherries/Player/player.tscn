@@ -1,0 +1,112 @@
+[gd_scene load_steps=19 format=3 uid="uid://b3btwin1x8nmk"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_ly4e5"]
+[ext_resource type="Texture2D" uid="uid://qpa86iw6ont1" path="res://Sunny-land-files/Graphical Assets/sprites/player/jump/player-jump-2.png" id="2_q50js"]
+[ext_resource type="Texture2D" uid="uid://v8gqojs7i2wy" path="res://Sunny-land-files/Graphical Assets/sprites/player/hurt/player-hurt-1.png" id="3_0gy1e"]
+[ext_resource type="Texture2D" uid="uid://s82fmkuux44v" path="res://Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-1.png" id="3_clck1"]
+[ext_resource type="Texture2D" uid="uid://d18pthnwwffky" path="res://Sunny-land-files/Graphical Assets/sprites/player/hurt/player-hurt-2.png" id="4_hwtwg"]
+[ext_resource type="Texture2D" uid="uid://c0vy0173mjjs0" path="res://Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-2.png" id="4_qrpqm"]
+[ext_resource type="Texture2D" uid="uid://cc3x0xj65qews" path="res://Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-3.png" id="5_gqg3p"]
+[ext_resource type="Texture2D" uid="uid://clpwx5jtrtfb1" path="res://Sunny-land-files/Graphical Assets/sprites/player/idle/player-idle-4.png" id="6_tm5hl"]
+[ext_resource type="Texture2D" uid="uid://cjapu7ol1jx6h" path="res://Sunny-land-files/Graphical Assets/sprites/player/jump/player-jump-1.png" id="7_ia6uv"]
+[ext_resource type="Texture2D" uid="uid://bemcpqs44q8ea" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-1.png" id="8_t77ue"]
+[ext_resource type="Texture2D" uid="uid://daxqbebn3s6rm" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-2.png" id="9_fd0ox"]
+[ext_resource type="Texture2D" uid="uid://d0eiq67rf6cgk" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-3.png" id="10_sguf2"]
+[ext_resource type="Texture2D" uid="uid://dxwa818gvta4m" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-4.png" id="11_75nf8"]
+[ext_resource type="Texture2D" uid="uid://dvehtt82rm6tv" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-5.png" id="12_kcbrb"]
+[ext_resource type="Texture2D" uid="uid://cn6gn3frnctjn" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-6.png" id="13_q2qff"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6ogud"]
+radius = 8.0
+height = 32.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qb3yu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_q50js")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_0gy1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hwtwg")
+}],
+"loop": true,
+"name": &"Hurt",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_clck1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qrpqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gqg3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tm5hl")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ia6uv")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_t77ue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_fd0ox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_sguf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_75nf8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_kcbrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_q2qff")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ti4jh"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_ly4e5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_6ogud")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(7.15256e-07, -8)
+scale = Vector2(1.45455, 1.5)
+sprite_frames = SubResource("SpriteFrames_qb3yu")
+animation = &"Idle"
+autoplay = "Idle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CollisionShape2D")
+libraries = {
+"": SubResource("AnimationLibrary_ti4jh")
+}

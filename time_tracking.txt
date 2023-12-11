@@ -66,3 +66,108 @@
 25+ minutes  
     Watched some of "All 219 Godot Nodes Explained In 42 Minutes !"
     and "5 tips for better platformer controls"
+
+
+12/4/23
+25 minutes
+    Updated Godot
+    Fixed Camera
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Started creating Frog enemy
+
+30+ Minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Frog AI and animation
+
+< 10 Minutes
+    Player velocity expiriment
+
+25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Frog death
+
+25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Frog death
+        player HP UI
+
+25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Player HP, jump bounce, and death
+
+12/5/23
+
+25 minutes
+    Solved player death animation Bug
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Saving the game and global scripts
+
+25 minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Saving the game and global scripts continued
+        Collect the stuff Planning
+
+30+ minutes
+    Continued watching Godot Game Development – Crash Course for Beginners Tutorial Video
+        Cherry collectable
+        animating with tweens
+
+12/6/23
+
+< 20 Minutes
+    Finished watching Godot Game Development – Crash Course for Beginners Tutorial Video
+
+12/7/23
+
+25+ Minutes
+    Started Collect The Cherries Game
+    Building Main Menu
+        
+
+14+ Minutes
+    
+    Level 1 Time map and background
+
+26 Minutes
+    Tile set expiriment
+    Create PLayer
+
+~30 Minutes
+    PLayer Physics and animation
+
+12/8/23
+
+25+ Minutes
+    PLayer physics and Camera
+    Tileset and level 1 layout
+
+12/9/23
+
+~30+ Minutes
+    Player Camera
+    Tileset and level layout
+    created cherry 
+
+~27 minutes
+    worked on cherry object
+    worked on countdown timer
+    Created minimum viable project sans how to play instrructions
+
+12/11/23
+
+25 Minutes
+    Added how to play instructions in game
+    animated cherry tweens
+    finished minimum viable product
+
+25 minutes
+    Created level 2
+    Added frog enemy
+
+25 mimnutes
+    Frog bug fix
+
+35+ minutes
+    created level 3
+    frog work
+
