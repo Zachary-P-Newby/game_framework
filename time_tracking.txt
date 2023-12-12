@@ -171,3 +171,5 @@
     created level 3
     frog work
 
+18 minutes
+    Compiled game and filled our part of README

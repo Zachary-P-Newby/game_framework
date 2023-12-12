@@ -6,10 +6,7 @@ To play the game run *collect_the_cherries.exe* on Windows, or unzip *collect_th
 
 One of the ways I express my appreciation for something is by imagining or making my own version, and since I like video games, I decided to learn Godot to create my own. To learn godot I completed the [GdQuest Learn Code from Zero - Gd Script Tutorials](https://gdquest.github.io/learn-gdscript/) and followed along the [Godot Game Development – Crash Course for Beginners](https://www.youtube.com/watch?v=S8lMTwSRoRg) video tutorial before making collect the cherries to demonstrate what I learned.
 
-
-{Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the game being played and a walkthrough of the code.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Demo Video](https://youtu.be/7mhuWpmcACU)
 
 # Development Environment
 
@@ -32,10 +29,8 @@ The [Sunny Land Asset Pack](https://ansimuz.itch.io/sunny-land-pixel-game-art) w
 * [5 tips for better platformer controls](https://youtu.be/Bsy8pknHc0M?si=TQBD93VJqGlm5ztl)
 * [GDScript Format String Tutorial – Complete Guide](https://gamedevacademy.org/gdscript-format-string-tutorial-complete-guide/)
 
-# Future Work
+# Future Work/Things I will do if I ever do a remake.
 
 * Add SFX and Music
-* Try creating other types of games
-* Item 3
-
-* [Web Site Name](http://url.link.goes.here)
+* More Levels
+* Make full screen functional
